@@ -2547,8 +2547,7 @@ func (s *Variant) MarshalJSON() ([]byte, error) {
 
 // VariantInfo: A map of additional variant information. This must be of
 // the form map (string key mapping to a list of string values).
-type VariantInfo struct {
-}
+type VariantInfo map[string][]string
 
 // VariantCall: A call represents the determination of genotype with
 // respect to a particular variant. It may include associated
@@ -2612,8 +2611,7 @@ func (s *VariantCall) MarshalJSON() ([]byte, error) {
 // VariantCallInfo: A map of additional variant call information. This
 // must be of the form map (string key mapping to a list of string
 // values).
-type VariantCallInfo struct {
-}
+type VariantCallInfo map[string][]string
 
 // VariantSet: A variant set is a collection of call sets and variants.
 // It contains summary statistics of those contents. A variant set
